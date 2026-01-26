@@ -96,3 +96,28 @@ class SniffleLogger {
 
 // Update 15
 module.exports = SniffleLogger;
+
+
+// Main entry point for SniffleLogger
+
+class SniffleLogger {
+    constructor() {
+        this.initialized = true;
+        this.version = '1.0.26';
+    }
+    
+    start() {
+        return 'Started';
+    }
+    
+    stop() {
+        return 'Stopped';
+    }
+    
+    getStatus() {
+        return { status: 'running', version: this.version };
+    }
+}
+
+// Update 26
+module.exports = SniffleLogger;
